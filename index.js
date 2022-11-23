@@ -75,7 +75,7 @@ async function run() {
   })
 
   console.log('Scrolling to load more gallery')
-  // await autoScroll(page)
+  await autoScroll(page)
 
   const links = await page.evaluate(() =>
     Array.from(
